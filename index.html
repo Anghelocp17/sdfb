@@ -1,45 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZapasCool - Tienda de Zapatillas</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | ZapatillasX</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>ZapasCool</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <h2>Descubre las mejores zapatillas</h2>
-      <p>Comodidad, estilo y rendimiento en un solo lugar.</p>
-    </div>
-  </section>
-
-  <main class="container">
-    <h2 class="section-title">Nuestros Productos</h2>
-    <div class="product-grid">
-      <?php include 'includes/products.php'; ?>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; <?= date("Y") ?> ZapasCool. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+    </form>
+    <p id="error" class="error-message"></p>
+  </div>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
+
+
